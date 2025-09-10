@@ -1,0 +1,16 @@
+version: '3.8'
+
+
+services:
+
+  mysql-db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456 # Sets the root password for MySQL
+      MYSQL_DATABASE: tecnico # Specifies a database to be created on startup
+      MYSQL_PASSWORD: 123456
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - 3306:3306

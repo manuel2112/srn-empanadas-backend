@@ -13,7 +13,6 @@ export class EmpanadaRoutes {
     router.post("/", controller.storeEmpanada);
     router.put("/:id", controller.putEmpanada);
     router.delete("/:id", controller.deleteEmpanada);
-    // router.post("/", [AuthMiddleware.validateJWT], controller.createCategory);
 
     return router;
   }

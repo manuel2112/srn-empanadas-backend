@@ -1,6 +1,8 @@
+import { envs } from "../../config";
+
 export const dbConfig = {
-  HOST: "localhost",
-  USER: "root",
-  PASSWORD: "123456", // Replace with your MySQL password
-  DB: "tecnico", // Replace with your database name
+  HOST: envs.DB_HOST,
+  USER: envs.DB_USERNAME,
+  PASSWORD: envs.DB_PASSWORD,
+  DB: envs.DB_DATABASE,
 };
